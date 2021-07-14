@@ -24,13 +24,13 @@ body {
 }
 
 .container {
-    padding: 0px 130px;
-    margin-top: 50px;
+    padding: 50px 130px;
 }
 
 .colored-bg {
     background-color: #2D25A0;
-    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 /* -----------------
@@ -108,18 +108,20 @@ body {
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 1.5em;
+    padding: 0 25px;
 }
 
 .player {
-    padding: 0px 16px;
+    padding: 15px;
+    border-radius: 5px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
 .player-img {
     width: 300px;
     height: 256px;
-    margin: 16px 0px;
+    border-radius: 5px;
 }
 
 /* -----------------
@@ -146,6 +148,7 @@ body {
 }
 
 #highlight-img {
-    width: 556.01px;
-    height: 438px;
+    width: 540px;
+    height: 420px;
+    border-radius: 5px;
 }
