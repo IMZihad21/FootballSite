@@ -315,6 +315,10 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .player-img {
+        width: 100%;
+    }
+
     /* Upcoming matches  */
     .matches {
         flex-direction: column;
@@ -383,6 +387,10 @@ footer {
     /* Players section  */
     .players{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-img {
+        width: 100%;
     }
 
     /* Upcoming matches  */
