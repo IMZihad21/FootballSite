@@ -107,6 +107,65 @@ h2 {
     height: 438px;
 }
 
+/* ------------------------------
+    Hover effect on top banner 
+--------------------------------- */
+@keyframes anim-btn {
+    0% {
+        padding-right: 28px;
+        background-color: #E02C6D;
+    }   
+
+    20% {
+        background-color: red;
+    }
+
+    40% {
+        background-color: black;
+        color: white;
+    }
+    
+    60% {
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        padding-right: 300px;
+        background-color: #E02C6D;
+        color: white;
+    }
+}
+
+.banner-container:hover .link-button {
+    animation: anim-btn 3s linear 0s infinite alternate;
+}
+
+.highlight-container:hover .link-button {
+    animation: anim-btn 3s linear 0s infinite alternate;
+}
+
+/* --------------------------
+    Hover effect on images
+----------------------------- */
+@keyframes anim-img {
+    0% {
+        transform: scale(1);
+    }    
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner-container:hover #banner-img {
+    animation: anim-img 3s linear 0s infinite alternate;
+}
+
 /* --------------
    Players list 
 ----------------- */
@@ -331,7 +390,7 @@ footer {
     
     .team {
         flex-direction: column;
-        width: 150px;
+        width: 170px;
     }
 
     .team h3 {
@@ -409,6 +468,7 @@ footer {
 
     .match-time {
         padding-left: 10px;
+        width: 100px;
     }
 
     /* Footer section  */
