@@ -315,6 +315,10 @@ footer {
     height: 32px;
 }
 
+.copyright {
+    padding-bottom: 10px;
+}
+
 /* --------------------------------------
     Responsive using media query
 ----------------------------------------- */
