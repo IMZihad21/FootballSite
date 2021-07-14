@@ -1,3 +1,8 @@
+/* ---------------------------
+  Importing font from google
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* -------------
   common styles
 ---------------- */
@@ -6,6 +11,14 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------
+    Top banner 
+---------------- */
 .banner-container {
     display: flex;
 }
@@ -16,7 +29,7 @@
 }
 
 .banner h1 {
-    
+
 }
 
 .banner img {
