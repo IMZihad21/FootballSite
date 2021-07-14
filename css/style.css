@@ -340,5 +340,73 @@ footer {
         width: 260px;
         height: auto;
     }
+}
 
+/* -----------------
+    Tablet devices
+-------------------- */
+
+@media (min-width: 689px) and (max-width: 992px) {
+
+    /* common style  */
+    .container{
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    /* navigations */
+    .navbar {
+        display: none;
+    }
+
+    /* Banner and Highlight section  */
+    .banner h1 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .highlight h1 {
+    font-size: 30px;
+    line-height: 50px;
+    }
+
+    #banner-img{
+        width: 328px;
+        height: auto;
+    }
+
+    #highlight-img {
+        width: 350px;
+        height: auto;
+
+    }
+
+    /* Players section  */
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Upcoming matches  */
+    .match {
+        padding: 0;
+    }
+    
+    .team {
+        flex-direction: column;
+        width: 120px;
+    }
+
+    .team h3 {
+        padding-left: 0;
+    }
+
+    .match-time {
+        padding-left: 10px;
+    }
+
+    /* Footer section  */
+    .footer-logo img {
+        width: 260px;
+        height: auto;
+    }
 }
