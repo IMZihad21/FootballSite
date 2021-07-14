@@ -184,3 +184,50 @@ footer {
     width: 32px;
     height: 32px;
 }
+
+/* -----------------------
+    Upcoming Matches 
+-------------------------- */
+
+.upcoming h2 {
+    font-size: 30px;
+    padding: 25px;
+}
+
+.matches {
+    display: flex;
+    justify-content: space-around;
+}
+
+.match {
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.teams {
+    border-right: 3px solid #e02c6e7c;
+}
+
+.team {
+    display: flex;
+    padding: 10px 40px;
+}
+
+.team img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.team h3 {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.match-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
