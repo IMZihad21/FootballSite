@@ -348,7 +348,7 @@ footer {
 
     .banner h1 {
         font-size: 36px;
-        line-height: 50px;
+        line-height: 60px;
     }
 
     .highlight h1 {
@@ -358,13 +358,13 @@ footer {
 
     #banner-img{
         padding-top: 50px;
-        width: 328px;
+        width: 100%;
         height: auto;
     }
 
     #highlight-img {
         padding-top: 50px;
-        width: 350px;
+        width: 100%;
         height: auto;
 
     }
@@ -446,12 +446,12 @@ footer {
     }
 
     #banner-img{
-        width: 328px;
+        width: 100%;
         height: auto;
     }
 
     #highlight-img {
-        width: 350px;
+        width: 100%;
         height: auto;
 
     }
