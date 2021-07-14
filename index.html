@@ -14,18 +14,20 @@
 
     <body>
         <!-- Header section  -->
-        <header style="display: none;">
+        <header>
             <!-- navigation panel -->
-            <nav>
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#">Clubs</a>
-                    <a href="#">World Cup 2023</a>
-                    <a href="#">Upcoming Matches</a>
-                    <a href="#">Contact</a>
+            <nav class="navbar container colored-bg">
+                <div id="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">World Cup 2023</a></li>
+                        <li><a href="#">Upcoming Matches</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
                 <div>
-                    <a href="#" class="link-button">
+                    <a href="#" id="login-button" class="link-button">
                         <img src="images/social/login.png" alt="">
                         <p>Login</p>
                     </a>
@@ -35,7 +37,7 @@
         <!-- main section  -->
         <main>
             <!-- top banner  -->
-            <section style="display: none;" class="container">
+            <section class="container colored-bg">
                 <div class="banner-container">
                     <div class="banner">
                         <h1>Conmebol <br>Copa America <br>2021</h1>
@@ -49,7 +51,7 @@
                 </div>
             </section>
             <!-- Player lists -->
-            <section style="display: none;" class="container">
+            <section class="container">
                 <div class="players">
                     <div class="player">
                         <img class="player-img" src="images/players/player-1.png" alt="">
