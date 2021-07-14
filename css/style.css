@@ -129,6 +129,31 @@ h2 {
     border-radius: 5px;
 }
 
+/* ---------------------
+    Standing Table 
+------------------------ */
+
+.standings {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.standings thead tr {
+    background-color: #E02C6D;
+    color: white;
+}
+
+.standings th,td {
+    text-align: center;
+    padding: 10px;
+}
+
+.standings tr:nth-child(2n) {
+    background-color: #3e2ce07c;
+}
+
 /* -----------------
     Highlight banner 
 -------------------- */
@@ -156,38 +181,6 @@ h2 {
     width: 540px;
     height: 420px;
     border-radius: 5px;
-}
-
-/* -----------------
-    Footer sections
--------------------- */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo img {
-    width: 480px;
-    height: 110px;
-}
-
-.social {
-    padding: 20px 0;
-}
-
-.social ul{
-    list-style-type: none;
-    display: flex;
-}
-
-.social li {
-    padding: 0 7px;
-}
-
-.social img {
-    width: 32px;
-    height: 32px;
 }
 
 /* -----------------------
@@ -232,27 +225,120 @@ footer {
     padding-left: 30px;
 }
 
-/* ---------------------
-    Standing Table 
------------------------- */
-
-.standings {
-    border-collapse: collapse;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+/* -----------------
+    Footer sections
+-------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.standings thead tr {
-    background-color: #E02C6D;
-    color: white;
+.footer-logo img {
+    width: 480px;
+    height: 110px;
 }
 
-.standings th,td {
-    text-align: center;
-    padding: 10px;
+.social {
+    padding: 20px 0;
 }
 
-.standings tr:nth-child(2n) {
-    background-color: #3e2ce07c;
+.social ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.social li {
+    padding: 0 7px;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+/* --------------------------------------
+    Responsive using media query
+----------------------------------------- */
+
+/* -----------------
+    Mobile devices
+-------------------- */
+
+@media (max-width: 688px) {
+
+    /* common style  */
+    .container{
+        margin: 0;
+        padding: 40px 15px;
+    }
+
+    /* navigations */
+    .navbar {
+        display: none;
+    }
+
+    /* Banner and Highlight section  */
+    .banner-container,
+    .highlight-container {
+        flex-direction: column;
+    }
+
+    .highlight, .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .highlight h1 {
+    font-size: 30px;
+    line-height: 40px;
+    }
+
+    #banner-img{
+        padding-top: 50px;
+        width: 328px;
+        height: auto;
+    }
+
+    #highlight-img {
+        padding-top: 50px;
+        width: 350px;
+        height: auto;
+
+    }
+
+    /* Players section  */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Upcoming matches  */
+    .matches {
+        flex-direction: column;
+    }
+
+    .match {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .team {
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .team h3 {
+        padding-left: 0;
+    }
+
+    /* Footer section  */
+    .footer-logo img {
+        width: 260px;
+        height: auto;
+    }
+
 }
