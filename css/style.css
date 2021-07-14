@@ -1,0 +1,25 @@
+/* -------------
+  common styles
+---------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.banner-container {
+    display: flex;
+}
+
+.banner {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.banner h1 {
+    
+}
+
+.banner img {
+    /* width: 70%; */
+    height: 438px;
+}
