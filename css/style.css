@@ -131,7 +131,7 @@ h2 {
     }
 
     100% {
-        padding-right: 300px;
+        padding-right: 200px;
         background-color: #E02C6D;
         color: white;
     }
@@ -402,6 +402,19 @@ footer {
         width: 260px;
         height: auto;
     }
+
+    /* disable animations  */
+    .banner-container:hover .link-button {
+        animation: none;
+    }
+
+    .highlight-container:hover .link-button {
+        animation: none;
+    }
+
+    .banner-container:hover #banner-img {
+        animation: none;
+    }
 }
 
 /* -----------------
@@ -475,5 +488,18 @@ footer {
     .footer-logo img {
         width: 260px;
         height: auto;
+    }
+
+    /* disable animations  */
+    .banner-container:hover .link-button {
+        animation: none;
+    }
+
+    .highlight-container:hover .link-button {
+        animation: none;
+    }
+
+    .banner-container:hover #banner-img {
+        animation: none;
     }
 }
