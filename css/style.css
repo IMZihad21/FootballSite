@@ -16,6 +16,7 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px 28px;
+    margin-top: 0px;
     background-color: #E02C6D;
 }
 
@@ -35,8 +36,6 @@ body {
 }
 
 .banner h1 {
-    width: 485px;
-    height: 230px;
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
@@ -66,4 +65,32 @@ body {
     width: 300px;
     height: 256px;
     margin: 16px 0px;
+}
+
+/* -----------------
+    Highlight banner 
+-------------------- */
+.highlight-container {
+    display: flex;
+}
+
+.highlight {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.highlight h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.highlight p{
+    color: #6C6C6C;
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+#highlight-img {
+    width: 556.01px;
+    height: 438px;
 }
