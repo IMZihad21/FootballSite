@@ -1,0 +1,509 @@
+/* ---------------------------
+  Importing font from google
+----------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* -------------
+  common styles
+---------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    background-color: #E02C6D;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 50px 130px;
+}
+
+.colored-bg {
+    background-color: #2D25A0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 25px;
+}
+
+/* -----------------
+    Navigation Bar 
+-------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#nav-links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav-links li {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+}
+
+#nav-links li:hover {
+    background-color: #E02C6D;
+    border-radius: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#login-button {
+    display: flex;
+    align-items: center;
+}
+
+#login-button img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* --------------
+    Top banner 
+---------------- */
+.banner-container {
+    display: flex;
+}
+
+.banner {
+    width: 50%;
+    color: #FFFFFF;
+}
+
+.banner h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    padding-bottom: 27px;
+}
+
+#banner-img {
+    width: 556.01px;
+    height: 438px;
+}
+
+/* ------------------------------
+    Hover effect on top banner 
+--------------------------------- */
+@keyframes anim-btn {
+    0% {
+        padding-right: 28px;
+        background-color: #E02C6D;
+    }   
+
+    20% {
+        background-color: red;
+    }
+
+    40% {
+        background-color: black;
+        color: white;
+    }
+    
+    60% {
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        padding-right: 200px;
+        background-color: #E02C6D;
+        color: white;
+    }
+}
+
+.banner-container:hover .link-button {
+    animation: anim-btn 3s linear 0s infinite alternate;
+}
+
+.highlight-container:hover .link-button {
+    animation: anim-btn 3s linear 0s infinite alternate;
+}
+
+/* --------------------------
+    Hover effect on images
+----------------------------- */
+@keyframes anim-img {
+    0% {
+        transform: scale(1);
+    }    
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner-container:hover #banner-img {
+    animation: anim-img 3s linear 0s infinite alternate;
+}
+
+/* --------------
+   Players list 
+----------------- */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    padding: 0 23px;
+}
+
+.player {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-img {
+    width: 310px;
+    border-radius: 5px;
+}
+
+/* ---------------------
+    Standing Table 
+------------------------ */
+
+.standings {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.standings thead tr {
+    background-color: #E02C6D;
+    color: white;
+}
+
+.standings th,td {
+    text-align: center;
+    padding: 10px;
+}
+
+.standings tr:nth-child(2n) {
+    background-color: #3e2ce07c;
+}
+
+/* -----------------
+    Highlight banner 
+-------------------- */
+.highlight-container {
+    display: flex;
+}
+
+.highlight {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.highlight h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.highlight p{
+    color: #6C6C6C;
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+#highlight-img {
+    width: 540px;
+    height: 420px;
+    border-radius: 5px;
+}
+
+/* -----------------------
+    Upcoming Matches 
+-------------------------- */
+
+.matches {
+    display: flex;
+    justify-content: space-around;
+}
+
+.match {
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.teams {
+    border-right: 3px solid #e02c6e7c;
+}
+
+.team {
+    display: flex;
+    padding: 10px 40px;
+}
+
+.team img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.team h3 {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.match-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+/* -----------------
+    Footer sections
+-------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 480px;
+    height: 110px;
+}
+
+.social {
+    padding: 20px 0;
+}
+
+.social ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.social li {
+    padding: 0 7px;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    padding-bottom: 10px;
+}
+
+/* --------------------------------------
+    Responsive using media query
+----------------------------------------- */
+
+/* -----------------
+    Mobile devices
+-------------------- */
+
+@media (max-width: 688px) {
+
+    /* common style  */
+    .container{
+        margin: 0;
+        padding: 40px 15px;
+    }
+
+    /* navigations */
+    .navbar {
+        display: none;
+    }
+
+    /* Banner and Highlight section  */
+    .banner-container,
+    .highlight-container {
+        flex-direction: column;
+    }
+
+    .highlight, .banner {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .highlight h1 {
+    font-size: 30px;
+    line-height: 40px;
+    }
+
+    #banner-img{
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    #highlight-img {
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+
+    }
+
+    /* Players section  */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player-img {
+        width: 100%;
+    }
+
+    /* Upcoming matches  */
+    .matches {
+        flex-direction: column;
+    }
+
+    .match {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .team {
+        flex-direction: column;
+        width: 170px;
+    }
+
+    .team h3 {
+        padding-left: 0;
+    }
+
+    /* Footer section  */
+    .footer-logo img {
+        width: 260px;
+        height: auto;
+    }
+
+    /* disable animations  */
+    .banner-container:hover .link-button {
+        animation: none;
+    }
+
+    .highlight-container:hover .link-button {
+        animation: none;
+    }
+
+    .banner-container:hover #banner-img {
+        animation: none;
+    }
+}
+
+/* -----------------
+    Tablet devices
+-------------------- */
+
+@media (min-width: 689px) and (max-width: 992px) {
+
+    /* common style  */
+    .container{
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    /* navigations */
+    .navbar {
+        display: none;
+    }
+
+    /* Banner and Highlight section  */
+    .banner h1 {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .highlight h1 {
+    font-size: 30px;
+    line-height: 50px;
+    }
+
+    #banner-img{
+        width: 100%;
+        height: auto;
+    }
+
+    #highlight-img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    /* Players section  */
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-img {
+        width: 100%;
+    }
+
+    /* Upcoming matches  */
+    .match {
+        padding: 0;
+    }
+    
+    .team {
+        flex-direction: column;
+        width: 120px;
+    }
+
+    .team h3 {
+        padding-left: 0;
+    }
+
+    .match-time {
+        padding-left: 10px;
+        width: 100px;
+    }
+
+    /* Footer section  */
+    .footer-logo img {
+        width: 260px;
+        height: auto;
+    }
+
+    /* disable animations  */
+    .banner-container:hover .link-button {
+        animation: none;
+    }
+
+    .highlight-container:hover .link-button {
+        animation: none;
+    }
+
+    .banner-container:hover #banner-img {
+        animation: none;
+    }
+}
